@@ -1,0 +1,15 @@
+{
+  "name": "outbound-call-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ADB + Android outbound call agent: dial, ask how are you, save the answer",
+  "scripts": {
+    "start": "node src/index.js",
+    "prompt": "node src/prompt.js",
+    "voices": "node src/voices.js",
+    "bt": "node src/bt.js",
+    "install-apk": "node src/index.js --install-only",
+    "build-apk": "cd android-helper && ./gradlew assembleDebug"
+  }
+}
